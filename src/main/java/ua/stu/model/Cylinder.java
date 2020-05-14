@@ -18,7 +18,7 @@ public class Cylinder extends AbstractForm {
     public void setHeight(float height) throws Exception{
         if(height < 5 || height > 80){
             throw new Exception(height + " isn't correct height.\n"
-                    + "It must be from 10 to 100 cm.");
+                    + "It must be from 5 to 80 cm.");
         }
         this.height = height;
     }
@@ -26,7 +26,7 @@ public class Cylinder extends AbstractForm {
     public void setRadius(float radius) throws Exception{
         if(radius < 5 || radius > 80){
             throw new Exception(radius + " isn't correct height.\n"
-                    + "It must be from 10 to 100 cm.");
+                    + "It must be from 5 to 80 cm.");
         }
         this.radius = radius;
     }

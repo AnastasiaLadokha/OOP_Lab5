@@ -11,7 +11,6 @@ public class Timber extends AbstractForm {
         setLength(length);
         setWidth(width);
     }
-
     public void setLength(float length) throws Exception{
         if (length < 10 || length > 100){
             throw new Exception(length + " isn't correct length.\n"
@@ -19,9 +18,8 @@ public class Timber extends AbstractForm {
         }
         this.length = length;
     }
-
     public void setHeight(float height) throws Exception{
-        if(height < 5 || height > 80){
+        if(height < 10 || height > 100){
             throw new Exception(height + " isn't correct height.\n"
                     + "It must be from 10 to 100 cm.");
         }
@@ -29,7 +27,7 @@ public class Timber extends AbstractForm {
     }
 
     public void setWidth(float width) throws Exception{
-        if(width < 5 || width > 50){
+        if(width < 10 || width > 100){
             throw new Exception(width + " isn't correct width.\n"
                     + "It must be from 10 to 100 cm.");
         }

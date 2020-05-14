@@ -78,7 +78,8 @@ public class DlgTimber extends JDialog implements IWoodDialog {
         try {
             timber = new Timber(wood, length, height, width);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.getMessage(), "Timber dialog error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, e.getMessage(),
+                    "Timber dialog error", JOptionPane.ERROR_MESSAGE);
         }
         DlgTimber.this.setVisible(false);
         dispose();
